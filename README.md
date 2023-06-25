@@ -1,5 +1,5 @@
 **`#![no_std]`** version of crate **[fixedstr](https://crates.io/crates/fixedstr/)**:
-ibrary for strings of fixed maximum lengths that can be copied and
+library for strings of fixed maximum lengths that can be copied and
 stack-allocated using const generics.
 
 #### Examples
@@ -13,7 +13,7 @@ stack-allocated using const generics.
   assert_eq!(&a[..3], "abc"); // impls Index for Range types
   assert!(a<ab); // and Ord, Hash, Debug, Display, Eq, other common traits
   let astr:&str = a.to_str(); // convert to &str (zero copy)
-  let azstr:zstr<16> = zstr::from(a); // so is zstr
+  let azstr:zstr<16> = zstr::from(a); //zstr is a zero-terminated string
   let a32:str32 = a.resize(); // same kind of string but with 31-byte capacity  
   let mut u = str8::from("aλb"); //unicode support
   assert_eq!(u.nth(1), Some('λ'));  // get nth character
