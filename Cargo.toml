@@ -5,7 +5,7 @@ edition = "2021"
 license = "MIT"
 description = "no_std version crate fixedstr: strings of constant maximum size that can be copied and stack allocated"
 repository = "https://github.com/chuckcscccl/no_std_strings/"
-keywords = ["string, no_std"]
+keywords = ["string"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
