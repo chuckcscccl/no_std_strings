@@ -3,7 +3,7 @@ name = "no_std_strings"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-description = "no_std version crate fixedstr: strings of constant maximum size that can be copied and stack allocated"
+description = "no_std version of crate fixedstr: strings of constant maximum size that can be copied and stack allocated"
 repository = "https://github.com/chuckcscccl/no_std_strings/"
 keywords = ["string"]
 
