@@ -15,5 +15,5 @@ serde=["dep:serde"]
 [dependencies]
 serde={version="1", optional=true}
 
-[package.metadata.docs.rs]
-rustdoc-args = ["--document-private-items", "--features serde"]
+#[package.metadata.docs.rs]
+#rustdoc-args = ["--document-private-items", "--features serde"]
