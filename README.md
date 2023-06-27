@@ -1,6 +1,12 @@
 **`#![no_std]`** version of crate **[fixedstr](https://crates.io/crates/fixedstr/)**:
 library for strings of fixed maximum lengths that can be copied and
 stack-allocated using const generics.
+<br>
+
+**THIS CRATE WILL NOT BE UPDATED FURTHER.  Instead, version 0.4 of the
+[fixedstr](https://crates.io/crates/fixedstr/)** crate now supports
+no_std as an option.**
+
 
 #### Examples
 ```
