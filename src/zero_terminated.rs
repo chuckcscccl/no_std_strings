@@ -353,9 +353,8 @@ impl<const N: usize> core::cmp::Ord for zstr<N> {
 
 impl<const M: usize> zstr<M> {
     /// converts an zstr\<M\> to an zstr\<N\>. If the length of the string being
-    /// converted is greater than N, the extra characters are ignored and
-    /// a warning sent to stderr.
-    /// This operation produces a copy (non-destructive).
+    /// converted is greater than N, the extra characters are ignored.
+    /// This operation produces a copy.
     /// Example:
     ///```ignore
     ///  let s1:zstr<8> = zstr::from("abcdefg");
@@ -363,7 +362,6 @@ impl<const M: usize> zstr<M> {
     ///```
     pub fn resize<const N: usize>(&self) -> zstr<N> {
         let slen = self.blen();
-        //if (slen>=N) {eprintln!("!Fixedstr Warning in zstr::resize: string \"{}\" truncated while resizing to zstr<{}>",self,N);}
         let length = if (slen < N - 1) { slen } else { N - 1 };
         let mut chars = [0u8; N];
         chars[..length].clone_from_slice(&self.chrs[..length]);
